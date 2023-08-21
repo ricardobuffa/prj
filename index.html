@@ -5,6 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Perfil de Ricardo Buffa Verçosa</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="manifest" href="./manifest.webmanifest">
+    
+    <meta content='yes' name='apple-mobile-web-app-capable' />
+    <meta content='yes' name='mobile-web-app-capable' />
+    <meta name="apple-mobile-web-app-status-bar" content="#aa7700">
+    <meta name="theme-color" content="black">
+    <link rel="apple-touch-icon" href="assets/logos/icon-192x192-apple.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
     <header>
@@ -47,4 +55,26 @@
         <p>Telefone: (00) 1234-5678</p>
     </footer>
 </body>
-</html>
+<script>
+
+    
+    document.addEventListener("DOMContentLoaded", function (event) {
+            if ('serviceWorker' in navigator) {
+                console.log('has serviceworker');
+                window.addEventListener('load', () => {
+                    navigator.serviceWorker.register('serviceWorker.js')
+                        .then((registration) => {
+                            console.log('Service worker registered.',
+                             registration);
+                        });
+                });
+            }
+            else {
+                console.log("Your browser not supports serviceWorkers");
+            }
+        });
+    
+    </script>
+    
+    
+    </html>
