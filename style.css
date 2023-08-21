@@ -1,0 +1,76 @@
+/* Reset de estilos padrão */
+body, h1, h2, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos gerais */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+}
+
+header img {
+    max-width: 200px;
+    border-radius: 50%;
+}
+
+section {
+    background-color: #fff;
+    margin: 20px 0;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    margin-bottom: 5px;
+}
+
+footer {
+    text-align: center;
+}
+
+/* Estilos específicos */
+h1 {
+    font-size: 24px;
+    color: #333;
+}
+
+h2 {
+    font-size: 20px;
+    color: #555;
+    margin-top: 10px;
+}
+
+strong {
+    font-weight: bold;
+}
+
+/* Layout flexível para as seções */
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+/* Estilos para a seção de interesses */
+ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+/* Estilos para a seção de contato */
+footer p {
+    font-size: 16px;
+}
