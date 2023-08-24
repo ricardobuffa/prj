@@ -34,7 +34,7 @@
             "type": "image/png"
         }
     ],
-    "start_url": "https://ricardobuffa.github.io/prj/",
+    "start_url": "/prj/",
     "display": "standalone",
     "background_color": "#ffffff",
     "theme_color": "#199332"
